@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - src/*
+jobs:
+  checks:
+    name: ci
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo non-config files
